@@ -72,10 +72,27 @@ console.log(a);*/
 
 //Condicionales// 
 
-let numero = prompt("Ingresa un numero")
-if (numero >= 0){
+/* let numero = prompt("Ingrese País")
+if (text= Colombia){
     alert("El numero es positivo");
 } else{
     alert("El numero es negativo")
 }
-console.log("Siguiente flujo");
+console.log("Siguiente flujo"); */
+
+//Taller 1//
+
+let pais = prompt("Ingresa el País: ");
+let idioma = "";
+
+if (pais === "Colombia") {
+    idioma = "Español";
+} else if(pais === "Estados Unidos") {
+    idioma = "Inglés";
+} else if (pais === "Inglaterra") {
+    idioma = "Inglés";
+} else {
+    console.log("No existe el país !!!");
+}
+
+console.log("En " + pais + " se habla: " + idioma);
