@@ -1,3 +1,5 @@
+/*
+
 //nombrar variables
 let animales = ["perro", "gato", "conejo", "pez", "aguila"];
 
@@ -52,3 +54,40 @@ animales.push("tortuga"); //agregar tortuga al arreglo
 console.log(animales.includes("tortuga")); //true
 
 console.log(animales);
+
+//invertir lista
+
+let animalesInvertido = animales.reverse()
+console.log(animalesInvertido);
+
+//ordenar lista 
+
+console.log(animales.sort());
+
+//eliminar un elemento en un indice en especifico
+
+animales.splice(0, 1) 
+console.log(animales);
+
+*/
+
+// let animales = ["perro", "gato", "conejo", "pez", "aguila"]
+
+// lista resultante que tenga los elementos = ["águila", "conejo", "pez", "león"]
+
+let animales = ["perro", "gato", "conejo", "pez", "aguila"]
+
+animales.splice(0, 1)
+//comprobar si perro fue eliminado
+console.log(encontrarGato(animales));
+animales[0] = animales[3];
+//comprobar si gato fue eliminado
+console.log(encontrarGato(animales));
+animales.pop()
+animales.push("león");
+console.log(animales);
+
+function encontrarGato(lista) {
+    let result = lista.includes("gato")
+    return result
+}
